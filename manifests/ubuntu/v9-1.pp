@@ -12,7 +12,7 @@ class postgresql::ubuntu::v9-1 {
   $version = "9.1"
 
   case $lsbdistcodename {
-    'precise': {
+    'precise','oneiric': {
 
       include postgresql::debian::base
 
